@@ -1,0 +1,15 @@
+{{#pagination pageParams}}
+<div class="pagination">
+    {{#each this}} 
+        {{#if isCurrent}}
+            <span class='current'>{{text}}</span>
+        {{else}}
+            {{#if isEllipse}}
+            <span>{{ellipse_text}}</span> 
+            {{else}}
+            <a href="{{link_to}}p={{pageIndex}}">{{text}}</a> 
+            {{/if}}
+        {{/if}} 
+    {{/each}}
+</div>
+{{/pagination}}

@@ -1,0 +1,25 @@
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>昵称</th>
+                <th>姓名</th>
+                <th>电话</th>
+                <th>地区</th>
+                <th>运营商</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each rows}}
+            <tr>
+                <td>{{nickname}}</td>
+                <td>{{name}}</td>
+                <td>{{phone}}</td>
+                <td>{{area}}</td>
+                <td>{{operator}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    {{>pagination pageParams=this.pageParams}}
+</div>

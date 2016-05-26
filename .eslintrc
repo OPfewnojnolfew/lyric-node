@@ -1,0 +1,25 @@
+{
+    "env": {
+        "es6": true
+    },
+    "ecmaFeatures": {
+        "blockBindings": true,
+        "forOf": true,
+        "jsx": true
+    },
+    "rules": {
+        "semi": 2,
+        "indent": [2, 4, {
+            "SwitchCase": 1
+        }],
+        "quotes": [2, "single", "avoid-escape"],
+        "no-unused-expressions": [2, {
+            allowShortCircuit: true,
+            allowTernary: true
+        }],
+        "no-unused-vars": 2,
+        "camelcase": 2,
+        "curly": 2,
+        "no-alert": 2
+    }
+}
