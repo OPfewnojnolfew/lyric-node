@@ -73,11 +73,6 @@ app.engine('html', exphbs({
             var interval = getInterval();
             var np = numPages();
 
-
-            if ((current_page > 0 || opts.prev_show_always)) {
-                appendItem(current_page - 1, { text: opts.prev_text, classes: "prev pagination-icon-prev" });
-            }
-
             // Generate "Previous"-Link
             if ((current_page > 0 || opts.prev_show_always)) {
                 appendItem(current_page - 1, { text: opts.prev_text, classes: "prev pagination-icon-prev" });
